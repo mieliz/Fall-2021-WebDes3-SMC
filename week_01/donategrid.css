@@ -1,0 +1,29 @@
+#feedback { font-size: 1.4em; }
+
+#selectable .ui-selecting { background: #FECA40; }
+
+#selectable .ui-selected { background: #F39814; color: white; }
+
+#selectable { list-style-type: none; margin: auto; padding: 0; width: 450px; }
+
+#selectable li { margin: 3px;
+    padding: 1px;
+    float: left;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;}
+
+.price {
+    text-align: center;
+}
+
+.numbergrid {
+    text-align: center;
+    margin:auto;
+    float:auto;
+}
+button {
+    margin: 20px;
+}

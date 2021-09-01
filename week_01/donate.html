@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="main.css" rel="stylesheet">
-    
-
-<title>South Bay LGBTQ Center</title>
-</head>
-<body>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#selectable" ).selectable();
+    } );
+    </script>
+    <link href="main.css" rel="stylesheet">
+
+    <title>Donate</title>
+</head>
+<body>
+    
+
     
     <header>
         <!-- TODO: add navigation -->
@@ -39,55 +48,43 @@
     <main>
             <!-- MOBILE IPHONE X ALWAYS FULL WIDTH -->
             <section class="flex-container home">
-                <article class="bg-blue jumbotron">
-                    <h1>PRIDE MONTH CELEBRATION</h1>
-                    <h3>Celebrating the 52th anniversary of the Stone Wall Riots </h3>
+                <article class="bg-blue jumbotron b3">
+                    <h1>DONATE</h1>
+                    <h3>Make A Difference</h3>    
                 </article>
             </section>
 
             <!-- IPAD VERTICAL FULL WIDTH, MD: 50%, LA: 50% -->
-            <div class="segment">
-                <h1 class="lg-head">
-                    WHO WE ARE
-                </h1>
-            </div>
-            <section class="flex-container">
-                <article class="w-md-50">
-                   <div class="segment">
-                    <img src="http://www.nextel.com.pe/wp-content/uploads/2018/05/colectivo-lgbt-travestis-1.jpg" alt="blue northern lights">
-                     </div> 
-                </article>
-                <article class="w-md-50">
-                    <div class="segment">
-                    <h1>EST. 1989</h1>
-                    <h3>Proudly serving the South Bay LGBTQ+/Queer community for over 30 years</h3>
-                    
-                    <p>South Bay LGBTQ Center offers a wide variety of programs and activity groups for community members of all ages. Our goal is to celebrate and uplift our LGBTQ+/Queer community in the South Bay area.
-                    </p>
+            
+        <section class="flex-container">
+            <article class="w-lg-50">
+                <div class="segment srv">
+                    <h1 class="price">
+                        PRICE SELECTION
+                    </h1>
                 </div>
-                </article>
-            </section>
-
-            <div class="segment">
-                <h1 class="lg-head">
-                    WHAT WE DO
-                </h1>
-            </div>
-
-            <!-- IPAD HORIZONTAL FULL WIDTH, MD: 50%, LG: 33% -->
-            <section class="flex-container">
-                <article class="w-lg-66">
-                <div class="segment">
-                    <img src="https://safespacealliance.com/wp-content/uploads/2020/10/LGBT-Youth-Scotland-listing-image.jpg" alt="volunteers">
-                </div>
+                <section class="numbergrid">
+                    <ol id="selectable">
+                        <li class="ui-state-default">$5</li>
+                        <li class="ui-state-default">$10</li>
+                        <li class="ui-state-default">$25</li>
+                        <li class="ui-state-default">$50</li>
+                        <li class="ui-state-default">$100</li>
+                        <li class="ui-state-default">$250</li>
+                        <li class="ui-state-default">$500</li>
+                        <li class="ui-state-default">$750</li>
+                      </ol>
+                      <button type="button" onclick="alert('You Are The Best!')">Donate!</button>
+                </section>
             </article>
-            <article class="w-lg-33">
+            <article class="w-md-50 w-md-50t w-lg-50">
                 <div class="segment">
-                    
-                        <h3>A SAFE SPACE FOR ALL</h3>
-                        <p>South Bay LGBTQ Center offers a wide variety of programs and activity groups for community members of all ages. Our goal is to celebrate and uplift our LGBTQ+/Queer community in the South Bay area. NOTE: Meeting times are subject to change and are only meeting via Zoom. Please refer to our social media for more information. Zoom links below!</p>
-                </div>
-            </article>
+                 <h3>Your helps us achieve our goals. </h3>
+                 <p>South Bay LGBTQ Center is a volunteer-based nonprofit organization that receives no federal or state income. All contributions made help sustain our nonprofit and social gathering hub in the South Bay.</p>
+                 <p>Did you know? We are an all volunteer led organization. All of our volunteers are leading by example by giving time and talent. </p>
+                  </div> 
+             </article>
+        </section>
     </main>
 
     <footer class="footer">
@@ -122,7 +119,7 @@
                    
                     <a class="facebook" href="https://www.facebook.com/SouthBayLGBTQCenter/"><img src="facebook.png" alt="facebook"></a>
 
-                    <a class="youtube href="https://www.youtube.com/watch?v=iqNawK9MloI&t=1s"><img src="youtube.png" alt="youtube"></a>
+                    <a class="facebook" href="https://www.youtube.com/watch?v=iqNawK9MloI&t=1s"><img src="youtube.png" alt="youtube"></a>
                 </div>
             </article>
         </section>

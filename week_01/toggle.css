@@ -1,0 +1,20 @@
+.toggle-button {
+    width: 40px;
+    float: right;
+    margin: 10px;
+}
+
+#toggleAssist,
+ul.nav-links {
+    display: none;
+}
+
+#toggleAssist:checked + ul.nav-links {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
+}
