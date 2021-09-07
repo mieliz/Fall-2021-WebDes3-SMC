@@ -68,13 +68,13 @@
                 </article>
             </section>
 
-            <div class="segment">
+            <!-- <div class="segment">
                 <h1 class="lg-head">
                     WHAT WE DO
                 </h1>
             </div>
 
-            <!-- IPAD HORIZONTAL FULL WIDTH, MD: 50%, LG: 33% -->
+            IPAD HORIZONTAL FULL WIDTH, MD: 50%, LG: 33%
             <section class="flex-container">
                 <article class="w-lg-66">
                 <div class="segment">
@@ -87,12 +87,12 @@
                         <h3>A SAFE SPACE FOR ALL</h3>
                         <p>South Bay LGBTQ Center offers a wide variety of programs and activity groups for community members of all ages. Our goal is to celebrate and uplift our LGBTQ+/Queer community in the South Bay area. NOTE: Meeting times are subject to change and are only meeting via Zoom. Please refer to our social media for more information. Zoom links below!</p>
                 </div>
-            </article>
+            </article> -->
 
             <!-- IPAD VERTICAL FULL WIDTH, MD: 50%, LA: 50% -->
             <div class="segment srv">
                 <h1 class="lg-head">
-                    Featured Work
+                    FEATURED WORK
                 </h1>
             </div>
             <section class="flex-container srvlist">
@@ -157,17 +157,21 @@
                       </div> 
                  </article>
             </section>
-            <button id="fadeImgIn">Still Hungry?</button>
+           <div class="center">
+            <button class="button" id="fadeImgIn">Still Hungry?</button>
+            </div>
                 <section class="flex-container">
             <article class="w-md-50">
                 <div class="img-container segment fluff slidetoggle slideup ">
                     <img class="yawn" src="https://www.gaytimes.co.uk/wp-content/uploads/2018/09/Hungry-768x479.png" alt="yawning-puppy">
                     <!-- <button id="slideUp">Slide the image up</button> -->
                     <!-- <button id="fadeImgIn">Still Hungry?</button> -->
-                </div>
+                
+                <h3 class="yawn slidetoggle fluff img">Hungry often designs her look from the toes up, incorporating some of the same colours, patterns, and textures on the clothing she’s wearing, on her face. And unlike conventional drag make-up, she pushes the limits of what’s expected by reshaped her eyes, cheekbones, and mouth into new, organic forms inspired by animals and nature.</h3>
+            </div>
             </article>
             <article class="w-md-50">
-                <div class="img-container segment fluff slidetoggle slideup ">
+                <div class="img-container segment fluff slidetoggle slideup">
                     <img class="yawn" src="https://www.gaytimes.co.uk/wp-content/uploads/2018/09/hungry-1.png" alt="yawning-puppy">
                     <!-- <button id="slideUp">Slide the image up</button> -->
                     
@@ -298,6 +302,7 @@
 
         $("#fadeImgIn").click(function(){
             $(".fluff img").fadeIn(3000);
+            $(".yawn").fadeIn(4000);
         });
 
         $("#slideImgDown").click(function(){
