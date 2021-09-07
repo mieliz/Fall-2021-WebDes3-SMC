@@ -4,6 +4,7 @@
 @import url("flex-order.css");
 @import url("nav.css");
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wire+One&display=swap');
 @import url(contact_form.css);
 @import url(toggle.css);
 @import url(donategrid.css);
@@ -117,3 +118,6 @@ p , li, ul {
     text-align: center;
 }
 
+.title{
+    font-family: 'Wire One', sans-serif;
+}
