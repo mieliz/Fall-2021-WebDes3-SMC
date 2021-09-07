@@ -157,6 +157,13 @@
                       </div> 
                  </article>
             </section>
+            <article class="w-md-50">
+                <div class="img-container segment fluff slidetoggle slideup ">
+                    <img class="yawn" src="https://www.gaytimes.co.uk/wp-content/uploads/2018/09/Hungry-768x479.png" alt="yawning-puppy">
+                    <!-- <button id="slideUp">Slide the image up</button> -->
+                    <button id="fadeImgIn">Still Hungry?</button>
+                </div>
+        </article>
             <section class="flex-container">
                 <div id="formcontent">
                     <section class="contactus">
@@ -214,6 +221,90 @@
             </article>
         </section>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // let addTextB = document.getElementById("addMore");
+        // let textP = document.getElementById("myP");
 
+        // addTextB.addEventListener("click", function(){
+        //     let contentP = textP.innerText;
+
+        //     let newP = document.createElement('p');
+        //     newP.innerText = contentP;
+        //     document.getElementById("paragraphs").appendChild(newP);
+
+        // })
+        
+        $("#addMore").click(function(){
+            let cloneP = $("#myP").clone();
+            cloneP.addClass("cloned");
+            $("#paragraphs").append( cloneP );
+            //$("#myP").clone().appendTo("#paragraphs");
+        });
+
+        $("#removeSome").click(function(){
+            $(".cloned").remove();
+        })
+
+        $("#hideImg").click(function(){
+            $(".hide img").hide();
+        })
+
+        $("#showImg").click(function(){
+            $(".show img").show();
+        })
+
+        $("#toggleImg").click(function(){
+            $(".img-container img").toggle();
+        })
+
+
+        $("#fadeImgOut").click(function(){
+            $(".fade img").fadeOut(2000, function(){
+                $(".img-container").append("<h3>Image has finished fading out!</h3>");
+            });
+        })
+
+        $("#fadeImgIn").click(function(){
+            $(".fluff img").fadeIn(3000);
+        });
+
+        $("#slideImgDown").click(function(){
+            $(".slide img").slideDown(1000, function(){
+                $(".img-container h3").remove();
+            })
+        })
+
+        $("#slideUp").click(function(){
+             $(".slideup img").slideUp();
+        }); 
+
+        $("#slideToggle").click(function(){
+            $(".slidetoggle").slideToggle();
+        }); 
+
+        $("#customAnim").click(function(){
+            $(".animation img").animate( 
+                //objects with CSS properties to animate:
+                {
+                    width: "0%", 
+                    left: 500 
+                }
+            );
+        })
+
+        $("#animationclose").click(function(){
+            $(".fluff img").animate( 
+                //objects with CSS properties to animate:
+                {
+                    width: "100%", 
+                    left: 0 
+                }
+            );
+        })
+        
+
+    </script>
 </body>
 </html>

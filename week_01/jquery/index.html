@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    
+    <title>Intro to jQuery</title>
+
+</head>
+
+
+<body>
+    <div id="paragraphs">
+        <p id="myP">Intro To jQuery</p>
+    </div>
+
+        <!-- Quokka -->
+    <section class="flex-container">
+        <article class="w-md-50">
+            <div class="img-container segment hide show">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Quokka_at_rottnest_%28cropped%29.jpg" alt="Quokka at home">
+                <button id="hideImg">Hide the image</button>
+                <button id="showImg">Show the image</button>
+            </div>
+        </article>
+        <!-- TWO PUPPIES -->
+        <article class="w-md-50">
+            <div class="img-container fade slide segment">
+                <img src="https://parade.com/wp-content/uploads/2021/02/cutest-dog-breeds.jpg" alt="Cute dog">
+                <button id="fadeImgOut">Fade the image out</button>
+                <button id="slideImgDown">Slide the image down</button>
+            </div>
+        </article>
+        <!-- FLUFFY PUPPY -->
+        <article class="w-md-50">
+            <div class="animation fluff segment">
+                <img src="https://i.pinimg.com/564x/19/c1/21/19c12127acae1ab3a3f9e254d795cb01.jpg" alt="Japanese dog">
+                <button id="customAnim">Custom Animation Close</button>
+                <button id="animationclose">Custom Animation open</button>
+            </div>
+        </article>
+        <!-- yawning-puppy -->
+        <article class="w-md-50">
+            <div class="img-container segment fluff slidetoggle slideup ">
+                <img src="https://www.petsworld.in/blog/wp-content/uploads/2018/02/yawning-puppy.jpg" alt="yawning-puppy">
+                <button id="slideUp">Slide the image up</button>
+                <button id="fadeImgIn">Fade Image In</button>
+            </div>
+    </article>
+    </div>
+
+</section>
+    <hr>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // let addTextB = document.getElementById("addMore");
+        // let textP = document.getElementById("myP");
+
+        // addTextB.addEventListener("click", function(){
+        //     let contentP = textP.innerText;
+
+        //     let newP = document.createElement('p');
+        //     newP.innerText = contentP;
+        //     document.getElementById("paragraphs").appendChild(newP);
+
+        // })
+        
+        $("#addMore").click(function(){
+            let cloneP = $("#myP").clone();
+            cloneP.addClass("cloned");
+            $("#paragraphs").append( cloneP );
+            //$("#myP").clone().appendTo("#paragraphs");
+        });
+
+        $("#removeSome").click(function(){
+            $(".cloned").remove();
+        })
+
+        $("#hideImg").click(function(){
+            $(".hide img").hide();
+        })
+
+        $("#showImg").click(function(){
+            $(".show img").show();
+        })
+
+        $("#toggleImg").click(function(){
+            $(".img-container img").toggle();
+        })
+
+
+        $("#fadeImgOut").click(function(){
+            $(".fade img").fadeOut(2000, function(){
+                $(".img-container").append("<h3>Image has finished fading out!</h3>");
+            });
+        })
+
+        $("#fadeImgIn").click(function(){
+            $(".fluff img").fadeIn(3000);
+        });
+
+        $("#slideImgDown").click(function(){
+            $(".slide img").slideDown(1000, function(){
+                $(".img-container h3").remove();
+            })
+        })
+
+        $("#slideUp").click(function(){
+             $(".slideup img").slideUp();
+        }); 
+
+        $("#slideToggle").click(function(){
+            $(".slidetoggle").slideToggle();
+        }); 
+
+        $("#customAnim").click(function(){
+            $(".animation img").animate( 
+                //objects with CSS properties to animate:
+                {
+                    width: "0%", 
+                    left: 500 
+                }
+            );
+        })
+
+        $("#animationclose").click(function(){
+            $(".fluff img").animate( 
+                //objects with CSS properties to animate:
+                {
+                    width: "100%", 
+                    left: 0 
+                }
+            );
+        })
+        
+
+    </script>
+</body>
+</html>
