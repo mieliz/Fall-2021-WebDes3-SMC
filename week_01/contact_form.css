@@ -1,7 +1,19 @@
 /*contact*/
-#formcontent {max-width: 970px;}
-.contact_title {font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";font-size: 150px; color:#A1A1A1;margin:75px 200px 25px 205px;padding: 0 0 0 0}
-.formname {display: inline-block; margin: 0px 100px 100px 200px}
+#formcontent {
+  max-width: 970px;
+}
+.contact_title {
+  font-family: "Wire One", sans-serif;
+  text-align: center;
+  font-size: 150px;
+  color: #5a5a5a;
+  margin: 75px 200px 25px 205px;
+  padding: 0 0 0 0;
+}
+.formname {
+  display: inline-block;
+  margin: 0px 100px 100px 200px;
+}
 .formname {
   color: grey;
   font-size: 11px;
@@ -17,8 +29,9 @@
   float: right;
   width: 45%;
 }
-input, textarea {
-  border-radius: 40px;
+input,
+textarea {
+  border-radius: 10px;
   padding: 0.5em 0.7em;
   border: 2px solid rgba(160, 160, 160, 1);
   margin: 0.25em 0;
@@ -26,7 +39,7 @@ input, textarea {
   font-family: museo-sans-rounded, sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #A1A1A1;
+  color: #a1a1a1;
   margin-bottom: 20px;
 }
 textarea {
@@ -40,9 +53,10 @@ textarea {
 }
 #fname {
   width: 265px;
-  height: 31.835px;color:#2B2B2B;
+  height: 31.835px;
 }
-#email, #subject {
+#email,
+#subject {
   width: 580.751px;
   height: 31.835px;
 }
@@ -54,7 +68,7 @@ textarea {
   padding-top: 2px;
   border: 0;
   height: 41.835px;
-  font-size: 2.0em;
+  font-size: 2em;
   color: white;
 }
 .submit:hover {
@@ -64,5 +78,5 @@ textarea {
 }
 .submit:active {
   background-color: wheat;
-  color: #A5A5A5;
+  color: #a5a5a5;
 }
