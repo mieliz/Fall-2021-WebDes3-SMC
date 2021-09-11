@@ -17,7 +17,9 @@
         .container {
             margin-top: 103px;
         }
-        
+        .row {
+          height: 150px;
+        }
     </style>
 
     <title>Grid and navigation</title>
@@ -46,15 +48,15 @@
                       Dropdown
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="index.html">Layout 1</a></li>
+                      <li><a class="dropdown-item" href="#">Layout 2</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
-                  </li>
+                  </li> -->
                 </ul>
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -67,20 +69,21 @@
     
     <main class="container">
         <section class="row">
-            <div class="col-12 col-xl-6 bg-primary">Col 1</div>
-            <div class="col-12 col-md-6 col-xl-3 bg-secondary">Col 2</div>
-            <div class="col-12 col-md-6 col-xl-3 bg-warning">Col 3</div>
+            <div class="col-12 col-xl-12 col-lg-12  col-md-12 bg-primary">Col 1</div>
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-xl-3 bg-secondary">Col 2</div>
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-xl-3 bg-warning">Col 3</div>
+            <div class="col-12 col-xl-4 col-lg-4 col-md-12 col-xl-3 bg-info">Col 4</div>
         </section>
 
         <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col bg-primary">Row Col 1</div>
-            <div class="col bg-secondary">Row Col 2</div>
-            <div class="col bg-danger">Row Col 3</div>
-            <div class="col bg-warning">Row Col 4</div>
+            <div class="col col-xl-4 col-lg-4 col-md-6 bg-primary">Row Col 1</div>
+            <div class="col col-xl-4 col-lg-4 col-md-6 bg-secondary">Row Col 2</div>
+            <div class="col col-xl-4 col-lg-4 col-md-12 bg-danger">Row Col 3</div>
+            <!-- <div class="col bg-warning">Row Col 4</div>
             <div class="col bg-info">Row Col 5</div>
             <div class="col bg-dark text-light">Row Col 6</div>
             <div class="col bg-light">Row Col 7</div>
-            <div class="col bg-success">Row Col 8</div>
+            <div class="col bg-success">Row Col 8</div> -->
         </section>
     </main>
     
