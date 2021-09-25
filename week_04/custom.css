@@ -19,13 +19,12 @@
 
 .btn-success:hover {
   color: var(--white);
-  background-color: var(--raspberry);
-  border-color: var(--raspberry);
+  background-color: var(--salmon);
+  border-color: var(--green-black);
 }
 
 .btn-outline-success {
   color: var(--raspberry);
-  background-color: var(--raspberry);
   border-color: var(--raspberry);
 }
 
