@@ -10,11 +10,15 @@
 }
 
 .bg-light {
-  background-color: var(--green-black) !important;
+  background-color: var(--black) !important;
 }
 
-.navbar-light {
+.navbar-light .navbar-nav .nav-link {
   color: var(--white);
+}
+
+.nav-link.active {
+  color: var(--off-white);
 }
 .btn-success {
   color: var(--white);
