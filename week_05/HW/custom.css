@@ -7,17 +7,17 @@
   --red: rgb(186, 24, 27);
   --med-grey: rgb(177, 167, 166);
   --lite-grey: rgb(211, 211, 211);
-  --off-white: rgb(245, 243, 244);
+  --off-white: rgb(255, 253, 249);
   --white: rgb(255, 255, 255);
 }
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
-  color: var(--white);
+  color: var(--med-grey);
 }
 
 .bg-light {
-  background-color: var(--black) !important;
+  background-color: var(--off-white) !important;
 }
 
 
@@ -32,11 +32,11 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: var(--white);
+  color: var(--med-grey);
 }
 
 .nav-link.active {
-  color: var(--off-white);
+  color: var(--med-grey);
 }
 
 .btn-success {
@@ -88,4 +88,20 @@ body {
 
 main {
   margin-top: 60px;
+}
+
+.navbar-brand img {
+  width: 40%;
+}
+
+.navbar {
+  position: relative
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px !important;
+  /* 50% of your logo width */
+  display: block;
 }
