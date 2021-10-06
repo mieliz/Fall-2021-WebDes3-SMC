@@ -4,6 +4,11 @@
         .logo {
             width: 100px;
               }
+              @media(min-width: 992px){
+            .navbar > .container-fluid > * {
+                flex-basis: 0 !important;
+            }
+        }
         </style>
   <head>
     <!-- Required meta tags -->
@@ -22,32 +27,38 @@
   </head>
   <body>
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light">
-          <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="wcw_logo.svg" class="logo" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
 
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="shop.html">Shop</a>
-                </li>
-              </ul>
-            </div>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <a class="navbar-brand order-lg-1 flex-lg-grow-1 text-center" href="#">
+                  <img src="http://placekitten.com/40/40" alt="logo">
+              </a>
+
+              <a href="#" class="order-lg-2 flex-lg-grow-1 text-end"><i class="bi bi-cart2"></i></a>
+
+              <div class="collapse navbar-collapse order-lg-0 flex-lg-grow-1" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                      </li>
+                  </ul>
+              </div> <!-- end of navbar-collapse -->
 
 
           </div>
-        </nav>
-
+      </nav>
   </header>
 
-    <main>
+    <main class="container">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -78,49 +89,52 @@
             
           
           <section class="container">
-            <div class="row m-3" style="height:;">
-              <div class="col-12 col-md-6 col-lg-3 border border-3 border-white bg-danger p-5">
-              1</div>   
-              <div class="col-12 col-md-6 col-lg-3 border border-3 border-white bg-warning p-5">2 
+            <div class="row gy-3">
+              <div class="col-12 col-lg-6 bg-primary">
+                  <img class="img-fluid" src="http://placekitten.com/600/600">
               </div>
-              <div class="col-12 col-md-6 col-lg-3 border border-3 border-white bg-primary p-5">3</div>
-              <div class="col-6 col-md-6 col-lg-3 border border-3 border-white bg-success p-5">4
+              <div class="col-12 col-lg-6 bg-info">
+                  <div class="row">
+                      <div class="col-6">
+                          <img class="img-fluid" src="http://placekitten.com/400/400">
+                      </div>
+                      <div class="col-6">
+                          <img class="img-fluid" src="http://placekitten.com/400/400">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-6 gy-3">
+                          <img class="img-fluid" src="http://placekitten.com/400/400">
+                      </div>
+                      <div class="col-6 gy-3">
+                          <img class="img-fluid" src="http://placekitten.com/400/400">
+                      </div>
+                  </div>
               </div>
+          </div>
+          <div class="row gy-3">
+            <div class="col-12 col-lg-6 bg-primary">
+                <img class="img-fluid" src="http://placekitten.com/600/600">
             </div>
-            <div class="row m-3" style="height: ;">
-              
-              <div class="col-6 col-md-2 col-lg-6 border border-3 border-white bg-info p-5">5
-              </div>
+            <div class="col-12 col-lg-6 bg-info">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="img-fluid" src="http://placekitten.com/400/400">
+                    </div>
+                    <div class="col-6">
+                        <img class="img-fluid" src="http://placekitten.com/400/400">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 gy-3">
+                        <img class="img-fluid" src="http://placekitten.com/400/400">
+                    </div>
+                    <div class="col-6 gy-3">
+                        <img class="img-fluid" src="http://placekitten.com/400/400">
+                    </div>
+                </div>
             </div>
-            <div class="row m-3" style="height: ;">  
-              <div class="col-6 col-md-8 col-lg-6 border border-3 border-white bg-dark p-5">6
-              </div> 
-              <div class=" col-6 col-md-2 col-lg-6 border border-3 border-white bg-secondary p-5">7
-              </div>
-              <div class=" col-6 col-md-2 col-lg-6 border border-3 border-white bg-info p-5">8
-              </div>
-              <div class=" col-6 col-md-2 col-lg-6 border border-3 border-white bg-secondary p-5">9
-              </div>
-            </div>  
-              <div class=" col-12 col-md-6 col-lg-3 border border-3 border-white bg-danger p-5">10
-              </div>   
-              <div class=" col-12 col-md-6 col-lg-3 border border-3 border-white bg-warning p-5">11 
-              </div>
-              <div class=" col-12 col-md-6 col-lg-3 border border-3 border-white bg-primary p-5">12
-              </div>
-              <div class=" col-12 col-md-6 col-lg-3 border border-3 border-white bg-danger p-5">13
-              </div>   
-              <div class=" col-12 col-md-6 col-lg-3 border border-3 border-white bg-warning p-5">14 
-              </div>
-              <div class=" col-12 col-md-6 col-lg-3 border border-3 border-white bg-primary p-5">15
-              </div>
-              <div class=" col-12 col-md-6 col-lg-3 border border-3 border-white bg-primary p-5">16
-              </div>
-              <div class=" col-6 col-md-6 col-lg-3 border border-3 border-white bg-success p-5">17
-              </div>
-              <div class=" col-6 col-md-6 col-lg-3 border border-3 border-white bg-success p-5">18
-            </div>
-         </div>
+        </div>
             
         </section>
 
