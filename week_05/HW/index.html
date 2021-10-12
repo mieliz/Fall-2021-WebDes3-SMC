@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
-    <style>
-        .logo {
-            width: 100px;
-              }
-        
-    
-        </style>
+  <style>
+    @media(min-width: 992px){
+        .navbar > .container-fluid > * {
+            flex-basis: 0 !important;
+        }
+    }
+</style>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -24,38 +24,36 @@
   </head>
   <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+
+
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
               </button>
-    
+              
+              <a class="navbar-brand order-lg-1 flex-lg-grow-1 text-center" href="#">
+                  <img src="logo_nav_full.png" alt="logo">
+              </a>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="shop.html">Shop</a>
-                  </li>
-                </ul>
-                 
-              </div>
+              <a href="#" class="order-lg-2 flex-lg-grow-1 text-end"><i class="bi bi-cart2"></i></a>
 
-              <a class="navbar-brand" href="index.html"><img src="logo_nav_full.png" alt=""></a>
-              <div class="">
-                <!-- Icon -->
-                <a class="text-reset me-3" href="#">
-                  <i class="bi bi-cart2"></i>
-                </a>
-              </div>
+              <div class="collapse navbar-collapse order-lg-0 flex-lg-grow-1" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                      </li>
+                  </ul>
+              </div> <!-- end of navbar-collapse -->
 
 
-            </div>
-          </nav>
-
-    </header>
+          </div>
+      </nav>
+  </header>
 
     <main>
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
