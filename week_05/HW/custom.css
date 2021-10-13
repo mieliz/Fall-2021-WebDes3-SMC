@@ -86,10 +86,10 @@ body {
   color: var(--off-white);
 }
 
-main {
+/* main {
   margin-top: 60px;
-}
+} */
 
 .navbar-brand img {
-  width: 40%;
+    width: 10rem;
 }
