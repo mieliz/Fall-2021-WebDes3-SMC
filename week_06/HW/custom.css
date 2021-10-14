@@ -187,3 +187,10 @@ body {
     width: 100%;
     min-height: 100vh;
   }
+
+  .caption {
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    color: white;
+  }
