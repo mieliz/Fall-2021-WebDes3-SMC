@@ -194,3 +194,9 @@ body {
     width: 100%;
     color: white;
   }
+
+  .caption h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .8rem var(--med-grey) ;
+  }
