@@ -180,3 +180,10 @@ body {
   -webkit-transition-delay:.2s;
   transition-delay:.2s;
   }
+
+  /* video */
+  .video-background {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
