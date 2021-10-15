@@ -185,8 +185,19 @@ body {
   .video-background {
     position: absolute;
     right: 0%;
-    bottom: -30%;
   }
+  @media (max-width: 700px) {
+    .video-background {
+      right: -80%;
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .video-background {
+      right: -130%;
+    }
+  }
+  
 
   .caption {
     position: absolute;
