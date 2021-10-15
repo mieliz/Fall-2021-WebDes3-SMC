@@ -111,7 +111,7 @@ body {
   top:0;
   left:0;
   opacity:0;
-  background-color:rgba(0,0,0,0.5);
+  background-color:rgba(136, 96, 96, 0.5);
   -webkit-transition:all .4s ease-in-out;
   transition:all .4s ease-in-out
   }
@@ -149,7 +149,7 @@ body {
   filter:alpha(opacity=0);
   -webkit-transition:all .2s ease-in-out;
   transition:all .2s ease-in-out;
-  margin:50px 0 0;
+  margin:170px 0 0;
   padding:7px 14px;
   }
   
