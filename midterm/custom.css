@@ -80,7 +80,7 @@ h3 {
 
 p,
 body {
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   color: var(--dark-grey)
 }
 
