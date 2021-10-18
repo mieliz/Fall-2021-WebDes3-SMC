@@ -190,6 +190,7 @@ body {
     height: 100vh;
     display: block;
     overflow: hidden;
+    top: 0%;
   }
   @media (max-width: 700px) {
     .video-background {
