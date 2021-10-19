@@ -237,3 +237,7 @@ body {
    .icon {
     fill: var(--warm-brown);
   }
+
+  footer {
+    background-color: #fffdf9;
+  }
