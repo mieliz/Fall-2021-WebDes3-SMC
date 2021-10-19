@@ -92,8 +92,12 @@ body {
   color: var(--dark-grey)
 }
 
-.carousel-caption {
+.carousel-caption h1 {
   color: var(--off-white);
+  text-align: left;
+  font-weight: 600;
+  font-size: 9vh;
+  position: 
 }
 
 /* main {
@@ -241,3 +245,4 @@ body {
   footer {
     background-color: #fffdf9;
   }
+  
