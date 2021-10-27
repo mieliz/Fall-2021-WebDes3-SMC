@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        section {
+            height: 350px;
+        }
+
+        #gradient1 {
+            background-image: linear-gradient(#f6dcab,#f5a6f5 65%,#8370c5);
+        }
+
+        #gradient2 {
+            background-image: ;
+        }
+
+        #gradient3 {
+            background-image: ;
+        }
+
+        #gradient4 {
+            background-image: radial-gradient(circle, rgba(191,124,221,1) 0%, rgba(191,176,255,1) 22%, rgba(100,231,226,1) 46%, rgba(212,177,227,1) 100%);
+        }
+
+        #gradient5 {
+            background-image: radial-gradient(circle farthest-side at 70% 25%, rgba(75,222,70,1) 0%, rgba(123,236,219,1) 22%, rgba(186,238,177,1) 46%, rgba(185,255,123,1) 100%);
+        }
+        #gradient6 {
+            background-image: url(cloud);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #gradient6 h1 {
+            font-size: 80px;
+            margin: 0px;
+            text-align:left;
+            color:rgba(10,100,180,1);
+            position: absolute;
+        }
+        .transparent-gradient {
+            width:100%;
+            height: 100%;
+            position:absolute;
+            top:0;
+            left: 0;
+            background-image: linear-gradient (90deg,rgba(10,100,180,1),(90deg,rgba(10,100,180,1) rbga(10,100,180,0) );
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section id="gradient1"></section>
+
+        <section id="gradient2"></section>
+
+
+        <section id="gradient4"></section>
+
+        <section id="gradient5"></section>
+
+        <section id="gradient6">
+            <div class=""></div>
+            <h1>Buy this thing!</h1>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
