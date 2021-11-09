@@ -154,7 +154,7 @@
     margin-top: 100px;
     animation: leftani 5s 1;
     position: absolute;
-    left: 20vw;
+    left: 8.5vw;
   }
   .rotate:hover {
   transform: rotate(360deg);
@@ -168,6 +168,6 @@
   }
 
   @keyframes leftani {
-    from {left: -50vw;}
-      to {left:20vw;}
+    from {left: -100vw;}
+      to {left:8.5vw;}
   }
