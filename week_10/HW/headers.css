@@ -152,7 +152,7 @@
 
   .bod {
     margin-top: 100px;
-    animation: leftani 5s 1;
+    animation: leftani 2.5s 1;
     position: absolute;
     left: 8.5vw;
   }
@@ -168,6 +168,6 @@
   }
 
   @keyframes leftani {
-    from {left: -50vw;}
-      to {left:8.5vw;}
+    from {bottom: -50vw;}
+      to {bottom:-185px;}
   }
