@@ -168,6 +168,6 @@
   }
 
   @keyframes leftani {
-    from {left: -100vw;}
+    from {left: -50vw;}
       to {left:8.5vw;}
   }
