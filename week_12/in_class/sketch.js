@@ -10,7 +10,7 @@ let circleClr;
 //UI
 let sliderHue;
 let clickCounter;
-let timer = 60
+let timer = 20
 
 function setup(){
     let myCanvas = createCanvas(1000,600);
@@ -38,13 +38,14 @@ function draw(){
 
     noFill();
     stroke(181, 18, 80);
-    strokeWeight(10);
-    rect(5,5,70,30);
+    strokeWeight(5);
+    rect(5,5,70,30,);
 
     textSize(24);
+    textAlign(CENTER);
     strokeWeight(2);
     fill(181,0,100);
-    text(clickCounter, 12, 28);
+    text(clickCounter, 40, 21);
 
     noStroke();
     circleClr = color(sliderHue.value(), 8, 100);
@@ -69,6 +70,8 @@ function draw(){
   if (timer == 0) {
     textSize(32)
     text("GAME OVER", width/2, height*0.7);
+    velX = 0;
+    velY = 0;
   }
 
    
