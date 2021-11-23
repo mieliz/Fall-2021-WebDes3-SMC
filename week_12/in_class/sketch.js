@@ -10,10 +10,10 @@ let circleClr;
 //UI
 let sliderHue;
 let clickCounter;
-
+let timer = 60
 
 function setup(){
-    let myCanvas = createCanvas(800,600);
+    let myCanvas = createCanvas(1000,600);
     myCanvas.parent('canvasParent');
 
     colorMode(HSB, 360, 100, 100)
@@ -27,27 +27,27 @@ function setup(){
     velX = 1.5;
     velY = 1;
 
-    radius = 50;
-    circleClr = color(0, 80, 100);
+    radius = 250;
+    circleClr = color(24, 74, 86);
 
     clickCounter = 0;
 }
 
 function draw(){
-    background(90, 40, 100);
+    background(187, 38, 74);
 
     noFill();
-    stroke(270, 80, 80);
+    stroke(181, 18, 80);
     strokeWeight(10);
     rect(5,5,70,30);
 
     textSize(24);
     strokeWeight(2);
-    fill(270,80,80);
+    fill(181,0,100);
     text(clickCounter, 12, 28);
 
     noStroke();
-    circleClr = color(sliderHue.value(), 80, 100);
+    circleClr = color(sliderHue.value(), 8, 100);
     fill(circleClr);
     circle(posX, posY, radius *2);
     if(posX + radius >= width || posX - radius <= 0) {
@@ -59,12 +59,25 @@ function draw(){
     posX += velX;
     posY += velY;
 
+    textAlign(CENTER, CENTER);
+  textSize(150);
+  text(timer, width/2, height/2);
+
+  if (frameCount % 60 == 0 && timer > 0) { // if the frameCount is divisible by 60, then a second has passed. it will stop at 0
+    timer --;
+  }
+  if (timer == 0) {
+    textSize(32)
+    text("GAME OVER", width/2, height*0.7);
+  }
+
    
 } // end of draw
 
 function mouseReleased(){
     if(dist(mouseX, mouseY, posX, posY) < radius) {
         //circleClr = color(255,80,100);
+        radius -= 10;
         clickCounter++;
         if(velX > 0) {
             velX++;
@@ -79,3 +92,4 @@ function mouseReleased(){
         //circleClr = color(0, 80, 100);
     }
 }
+
