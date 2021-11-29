@@ -10,7 +10,8 @@
     .navbar {
         margin-left:200px;
         left: 0% !important;
-        position: absolute;
+        position: fixed;
         transform: translateX(0%) !important;
+        
     }
 }
