@@ -3,7 +3,11 @@
     margin-left: 20px !important;
 }
 
+
 @media (min-width: 450px){
+    .block {
+        height:100vh;
+      }
 .navlinks {
     width:450px  !important;
     }

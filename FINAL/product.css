@@ -26,13 +26,13 @@
 
 .product-device {
   position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
+  right: -10%;
+  bottom: -5%;
+  width: 600px;
   height: 540px;
   background-color: #333;
   border-radius: 21px;
-  transform: rotate(30deg);
+  transform: rotate(25deg);
 }
 
 .product-device::before {
@@ -47,11 +47,13 @@
 }
 
 .product-device-2 {
-  top: -25%;
+  top: -10%;
   right: auto;
   bottom: 0;
-  left: 5%;
+  left: 0%;
   background-color: #e5e5e5;
+  transform: rotate(-25deg);
+  width: 650px;
 }
 
 
