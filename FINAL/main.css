@@ -4,6 +4,10 @@
 }
 
 
+.my-5 {
+    margin-top: 20rem !important;
+    margin-bottom: 3rem !important;
+}
 @media (min-width: 450px){
     .block {
         height:100vh;
