@@ -1,3 +1,7 @@
+@font-face {
+    font-family:Black-Bones;
+    src: url(fonts/BLACK\ BONES.TTF);
+}
 .display-1 {
-font-family: ;
+font-family:"Black-Bones";
 }
