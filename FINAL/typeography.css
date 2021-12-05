@@ -24,6 +24,14 @@ h3 {
 font-family: 'Grenze';
 }
 
-nav-link {
+.navbar-font {
     font-family: 'bodoni';
+}
+
+.nav-link {
+    color:rgb(79, 115, 2);
+}
+
+.nav-link:hover {
+    color: black;
 }
