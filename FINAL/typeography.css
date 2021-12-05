@@ -12,10 +12,18 @@
     font-family:sauce;
     src: url(fonts/OPENSAUCESANS-LIGHT.TTF);
 }
+@font-face {
+    font-family:bodoni;
+    src: url(fonts/BOD_B.TTF);
+}
 .display-1 {
 font-family:"bones";
 }
 
 h3 {
 font-family: 'Grenze';
+}
+
+nav-link {
+    font-family: 'bodoni';
 }
