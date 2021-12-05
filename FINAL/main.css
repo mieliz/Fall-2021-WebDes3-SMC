@@ -39,8 +39,17 @@
     overflow: visible;
    top: -100%;
   }
+
+  .video-background-food {
+    position: absolute;
+    right: 80%;
+    height: 100vh;
+    display: block;
+    overflow: visible;
+    top: -80%;
+   }
   @media (max-width: 550px) {
-    .video-background-delivery {
+    .video-background-delivery, .video-background-food {
       position: absolute;
    right: 500%;
     height: 100vh;
