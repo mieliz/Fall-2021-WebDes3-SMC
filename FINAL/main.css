@@ -5,7 +5,21 @@
     width: 428px !important;
     margin-left: 20px !important;
 }
+ /* IMGAGES */
+.break {
+  background-image:url(/FINAL/pictures/break.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+.pitasalad {
+  background-image:url(/FINAL/pictures/pita_salad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* IMAGES END */
 
 /* video */
 .video-background {
@@ -15,6 +29,25 @@
     display: block;
     overflow: hidden;
     top: 0%;
+  }
+
+  .video-background-delivery {
+   position: absolute;
+   right: 100%;
+    height: 100vh;
+    display: block;
+    overflow: visible;
+   top: -100%;
+  }
+  @media (max-width: 550px) {
+    .video-background-delivery {
+      position: absolute;
+   right: 500%;
+    height: 100vh;
+    display: block;
+    overflow: visible;
+   top: -100%;
+     }
   }
   
  
