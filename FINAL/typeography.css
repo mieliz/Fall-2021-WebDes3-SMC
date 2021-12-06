@@ -77,3 +77,9 @@ font-family: 'Grenze';
 .nav-link:hover {
     color: black;
 }
+
+@media (min-width: 767px) {
+    .who {
+    left: 25%;
+    }
+}
