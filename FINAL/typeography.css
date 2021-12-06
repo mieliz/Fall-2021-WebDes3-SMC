@@ -16,7 +16,14 @@
     font-family:bodoni;
     src: url(fonts/BOD_B.TTF);
 }
-.display-1 {
+@font-face {
+    font-family:grahm;
+    src: url(fonts/Grahm\ Rough.otf);
+}
+
+/* Typography System 1 START */
+
+/* .display-1 {
 font-family:"bones";
 }
 
@@ -26,8 +33,43 @@ font-family: 'Grenze';
 
 .navbar-font {
     font-family: 'bodoni';
-}
+} */
 
+/* Typography System 1 END */
+
+/* Typography System 2 START */
+
+    /* .display-1 {
+    font-family:"qui";
+    }
+    
+    h3 {
+    font-family: 'Belleza', sans-serif;
+    }
+    
+    .navbar-font {
+        font-family: 'sauce';
+    } */
+
+    /* Typography System 2 END */
+
+    /* Typography System 3 Start */
+    
+    .display-1 {
+    font-family:"grahm";
+    }
+    
+    h3 {
+    font-family: 'Alice', serif;
+    }
+    
+    .navbar-font {
+        font-family:'Alice';
+        font-style:normal;
+        font-weight:900;
+    }
+
+    /* Typography System 3 End */
 .nav-link {
     color:rgb(79, 115, 2);
 }
