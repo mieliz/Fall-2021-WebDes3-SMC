@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Belleza&family=Cardo&family=Grenze:wght@100&display=swap');
 @import url(typeography.css);
+@import url(animation.css);
 
 .logo {
     width: 428px !important;
