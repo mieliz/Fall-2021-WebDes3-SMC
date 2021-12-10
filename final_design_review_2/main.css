@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Belleza&family=Cardo&family=Grenze:wght@100&display=swap');
+@import url(typeography.css);
+@import url(animation.css);
+
+.logo {
+    width: 428px !important;
+    margin-left: 20px !important;
+}
+ /* IMGAGES */
+.break {
+  background-image:url(/FINAL/pictures/break.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pitasalad {
+  background-image:url(/FINAL/pictures/pita_salad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mencooking {
+  background-image:url(/FINAL/pictures/men_cooking.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.avacadotoast {
+  background-image:url(/FINAL/pictures/avacado_toast.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* IMAGES END */
+
+/* video */
+.video-background {
+    position: absolute;
+    right: 0%;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+    top: 0%;
+  }
+
+  .video-background-delivery {
+   position: absolute;
+   right: 100%;
+    height: 100vh;
+    display: block;
+    overflow: visible;
+   top: -100%;
+  }
+
+  .video-background-food {
+    position: absolute;
+    right: 80%;
+    height: 100vh;
+    display: block;
+    overflow: visible;
+    top: -80%;
+   }
+  @media (max-width: 550px) {
+    .video-background-delivery, .video-background-food {
+      position: absolute;
+   right: 500%;
+    height: 100vh;
+    display: block;
+    overflow: visible;
+   top: -100%;
+     }
+  }
+  
+ 
+  
+  .content:before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+@media (min-width: 1050px) {
+  .display-1 {
+      font-size: 9rem;
+  }
+}
+/* END OF VIDEO */
+
+.my-5 {
+    margin-top: 20rem !important;
+    margin-bottom: 3rem !important;
+}
+@media (min-width: 450px){
+    .block {
+        height:100vh;
+      }
+.navlinks {
+    width:450px  !important;
+    }
+    .navbar {
+        margin-left:180px  !important;
+        left: 0% !important;
+        position: fixed  !important;
+        transform: translateX(0%) !important;
+        
+    }
+}
