@@ -23,7 +23,7 @@
 
 /* Typography System 1 START */
 
-/* .display-1 {
+.display-1 {
 font-family:"bones";
 }
 
@@ -33,7 +33,7 @@ font-family: 'Grenze';
 
 .navbar-font {
     font-family: 'bodoni';
-} */
+}
 
 /* Typography System 1 END */
 
@@ -55,7 +55,7 @@ font-family: 'Grenze';
 
     /* Typography System 3 Start */
     
-    .display-1 {
+    /* .display-1 {
     font-family:"grahm";
     }
     
@@ -67,7 +67,7 @@ font-family: 'Grenze';
         font-family:'Alice';
         font-style:normal;
         font-weight:900;
-    }
+    } */
 
     /* Typography System 3 End */
 .nav-link {

@@ -39,7 +39,7 @@ font-family: 'Grenze';
 
 /* Typography System 2 START */
 
-    /* .display-1 {
+    .display-1 {
     font-family:"qui";
     }
     
@@ -49,13 +49,13 @@ font-family: 'Grenze';
     
     .navbar-font {
         font-family: 'sauce';
-    } */
+    }
 
     /* Typography System 2 END */
 
     /* Typography System 3 Start */
     
-    .display-1 {
+    /* .display-1 {
     font-family:"grahm";
     }
     
@@ -67,7 +67,7 @@ font-family: 'Grenze';
         font-family:'Alice';
         font-style:normal;
         font-weight:900;
-    }
+    } */
 
     /* Typography System 3 End */
 .nav-link {
