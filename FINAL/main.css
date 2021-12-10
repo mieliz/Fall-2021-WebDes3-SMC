@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Belleza&family=Cardo&family=Grenze:wght@100&display=swap');
 @import url(typeography.css);
 @import url(animation.css);
+@import url(colors.css);
 
 .logo {
     width: 428px !important;
@@ -14,8 +15,8 @@
   background-position: center;
 }
 
-.pitasalad {
-  background-image:url(/FINAL/pictures/pita_salad.jpg);
+.tomato {
+  background-image:url(/FINAL/pictures/tomato.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
