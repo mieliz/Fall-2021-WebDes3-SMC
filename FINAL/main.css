@@ -23,13 +23,13 @@
 }
 
 .mencooking {
-  background-image:url(/FINAL/pictures/men_cooking.jpg);
+  background-image:url(pictures/men_cooking.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .avacadotoast {
-  background-image:url(/FINAL/pictures/avacado_toast.jpg);
+  background-image:url(pictures/avacado_toast.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
