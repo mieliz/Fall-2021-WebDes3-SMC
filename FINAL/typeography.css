@@ -57,10 +57,12 @@ font-family: 'Grenze';
     
     .display-1 {
     font-family:"grahm";
+    color: rgb(242, 202, 167);
     }
     
     h3 {
     font-family: 'Alice', serif;
+    
     }
     
     .navbar-font {

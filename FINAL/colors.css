@@ -5,3 +5,24 @@
 .bg-info {
     background-color: rgb(110, 140, 3) !important;
 }
+
+.green {
+    color: rgb(110, 140, 3);
+}
+
+.yellow {
+    color: rgb(242, 174, 48);
+}
+
+.pale {
+    color: rgb(242, 202, 167);
+}
+
+.tan {
+    color: rgb(191, 128, 105);
+}
+
+.burn {
+    color: rgb(166, 59, 50);
+}
+
