@@ -39,6 +39,13 @@
   background-size: cover;
   background-position: center;
 }
+
+.pack {
+  background-image:url(pictures/packing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /* IMAGES END */
 
 /* video */
