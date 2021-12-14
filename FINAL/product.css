@@ -37,13 +37,13 @@
 
 .product-device::before {
   position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
+  top: 0%;
+  right: 0px;
+  bottom: 0%;
+  left: 0px;
   content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.64);
+  border-radius: 21px;
 }
 
 .product-device-2 {

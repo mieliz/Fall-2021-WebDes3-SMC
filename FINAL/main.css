@@ -4,8 +4,9 @@
 @import url(colors.css);
 
 .logo {
-    width: 428px !important;
-    margin-left: 20px !important;
+  width: 300px !important;
+  margin-left: 75px !important;
+  margin-top: -10px !important;
 }
 
 .navbar-toggler {
